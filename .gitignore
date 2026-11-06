@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# --- AI Shopping Feeds: credentials, local config and tool output ---
+# Never commit Pinterest app secrets, access tokens or refresh tokens.
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.p8
+*token*.json
+# Audit logs written by the server (may contain Pinterest ad account data)
+logs/
+*.jsonl
+*.jsonl.tmp
+# Report exports, if you save any by hand
+reports/
+*.csv
+*.json.gz
+# Tool caches, build output and OS files
+.venv/
+.venv-*/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+dist/
+build/
+.DS_Store
+.idea/
+.vscode/
